@@ -111,6 +111,13 @@ fieldset{
     margin-right: 20px;
 }
 
+.fieldset_btn{
+    display: inline-block; 
+    margin-bottom: 20px; 
+    margin-left: 20px;
+}
+
+
 .Fondo_Logo{
     background-color: rgb(57,102, 108);
 }
@@ -159,15 +166,19 @@ footer div {
     width: 185px;
 }
 
+.gradiente{
+    background-image: text-shadow: 3px 7px 8px rgba(18,35,43,0.9);
+}
 
 #grid__inicio{
     display: grid;
     grid-template-areas: 
     "header header"
+    "razo razo"
     "imagenes imagenes"
     "footer footer";  
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 8rem auto 10rem;
+    grid-template-rows: 8rem 1f auto 10rem;
     width: 100%;
     height: 100vh;
 }
@@ -249,7 +260,12 @@ h3{
     width: 45rem;
     height: 30rem;
     border-style: solid;
+    transition: height 0.4s;
    
+}
+
+.img__margenes:hover {
+    height: 35rem;
 }
 
 .img__margenesh1 {
@@ -269,11 +285,18 @@ h3{
 }
 
 .img__margenesNSL {
-        margin: 1rem;
-        width: 30rem;
-        height: 50rem;
-        border-style: solid;
+    margin: 1rem;
+    width: 30rem;
+    height: 50rem;
+    border-style: solid;
+    transition: width 0.3s;    
 }
+
+.img__margenesNSL:hover {
+    width: 35rem ;
+}
+
+
 
 .img__radio1{
     margin: 5rem;
@@ -328,6 +351,16 @@ h3{
     grid-area: parrafo2;
 }
 
+.razo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+    background: linear-gradient(to right, #5D5D5D 0%, #C8C8C8 55%, #FFFFFF 100%);
+    font-size: 5rem;
+    grid-area: razo;
+}
+
 .texto__inicio{
     display: none;
     grid-area: texto;
@@ -348,6 +381,7 @@ footer{
     #grid__inicio{
         grid-template-areas:
         "header header header"
+        "razo razo razo"
         "imagenes imagenes aside"
         "footer footer footer";  
         grid-template-columns: 1fr 1fr 300px;
