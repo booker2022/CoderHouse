@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap');
+
+
+.Art_Inicios{
+    background-color: #dad8db;
+    margin: 0 auto;
+    width: 1290px;
+}
+
+.Art_Mejoras{
+    background-color:  #f8f8f2;
+    margin: 0 auto;
+    width: 1290px;
+}
+
+.Art_Ahora{
+    margin: 0 auto;
+    width: 1290px;
+    background-color: #dad8db;
+}
+.ahora_div{
+    margin: 0 auto;
+    width: 960px;
+}
+
+
+aside{
+    display: none;
+    grid-area: aside;
+}
+
+html{
+    font-size: 62.5%;
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    background-color: rgb(57,102, 108);
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    height: 8rem;
+    grid-area: header;
+}
+
+.cabecera{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    height: 5rem;
+}
+
+.centrado{
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: bold ;
+    color: white;
+    top: 240px;
+    left: 90px;
+}
+
+.contenedor{
+    position: relative;
+    margin: 50px auto;
+    width: 700px;
+}
+
+.espacio_input {
+    margin: 20px 0;
+    border: solid;
+}
+
+fieldset{
+    position: relative;
+    margin: 35px auto;
+    width: 380px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.fieldset_marg{
+    margin: 15px;
+
+}
+
+.fieldset_sele_nivel{
+    display: inline-block;
+    margin: 15px;
+}
+
+.fieldset_sele_curso{
+    display: inline-block;
+    margin-bottom: 100px; 
+}
+
+
+.fieldset_select{
+    display: inline-block; 
+    margin-bottom: 50px; 
+    margin-right: 20px;
+}
+
+.Fondo_Logo{
+    background-color: rgb(57,102, 108);
+}
+
+footer div {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+}
+
+.footer__img1{
+    width: 50px;
+    height: 50px;
+}
+
+.footer__img2{
+    right: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.footer__txt1{
+    left: 65px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 15px;
+    width: 185px;
+}
+
+.footer__txt2{
+    left: 280px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 15px;
+    width: 220px;
+}
+
+.footer__txt3{
+    right: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 15px;
+    width: 185px;
+}
+
+
+#grid__inicio{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "imagenes imagenes"
+    "footer footer";  
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 8rem auto 10rem;
+    width: 100%;
+    height: 100vh;
+}
+
+#grid__historia{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "parrafo1 foto__articulo1"
+    "foto__articulo2 parrafo2"
+    "imagenesh imagenesh"
+    "footer footer";
+    grid-template-rows: 8rem 1fr 1fr 1fr 10rem;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.fotosh{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: imagenesh;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: blue;
+}
+
+.h1__inicio{
+    text-align: center;
+    width: 85rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: white;
+    visibility: hidden;
+}
+
+.imagenes__cole{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#imagenes__inicio{
+    display: flex;
+    justify-content: space-around;
+/*    align-items: flex-start;
+    flex-wrap: wrap; */
+    grid-area: imagenes;
+}
+
+.img__cuadro{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; 
+    grid-area: imagenes;
+
+}
+
+.img__inicio{
+    margin: 10px;
+}
+
+.img__logo{
+    max-height: 100%;
+}
+
+.img__margenes {
+    margin: 1rem;
+    width: 45rem;
+    height: 30rem;
+    border-style: solid;
+   
+}
+
+.img__margenesh1 {
+    margin: 1rem;
+    width: 45rem;
+    height: 30rem;
+    border-style: solid;
+    grid-area: imagen1;
+}
+
+.img__margenesh2 {
+    margin: 1rem;
+    width: 45rem;
+    height: 30rem;
+    border-style: solid;
+    grid-area: imagen2;
+}
+
+.img__margenesNSL {
+        margin: 1rem;
+        width: 30rem;
+        height: 50rem;
+        border-style: solid;
+}
+
+.img__radio1{
+    margin: 5rem;
+    border-radius: 15%;
+    border-style: solid;
+    grid-area: foto__articulo1;
+}
+
+.img__radio2{
+    margin: 5rem;
+    border-radius: 15%;
+    border-style: solid;
+    grid-area: foto__articulo2;
+}
+
+.menu__item{
+    display: inline-block;
+    margin: 0 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+}
+
+
+.menu__link{
+    text-decoration: none;
+    color: white;
+}
+
+.menu__link:hover{
+    color: #beee42;
+}
+
+.p__angosto1{
+    width: 500px; 
+    border-style: solid;
+    margin: 5rem;
+    padding: 10px;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 25px;
+    grid-area: parrafo1;
+}
+
+.p__angosto2{
+    width: 500px; 
+    border-style: solid;
+    margin: 5rem;
+    padding: 10px;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 25px;
+    grid-area: parrafo2;
+}
+
+.texto__inicio{
+    display: none;
+    grid-area: texto;
+}
+
+.border{
+    border: solid;
+}
+
+
+footer{
+    grid-area: footer;
+}
+
+
+@media screen and (min-width: 992px){
+
+    #grid__inicio{
+        grid-template-areas:
+        "header header header"
+        "imagenes imagenes aside"
+        "footer footer footer";  
+        grid-template-columns: 1fr 1fr 300px;
+    }    
+
+    #grid__historia{
+        grid-template-areas: 
+        "header header header"
+        "parrafo1 foto__articulo1 aside" 
+        "foto__articulo2 parrafo2 aside"
+        "imagenesh imagenesh aside"
+        "footer footer footer";
+        grid-template-columns: 1fr 1fr 30rem;
+    }
+
+    .h1__inicio{
+        visibility: visible;
+    }
+
+    aside{
+        display: block;
+    }
+
+}
